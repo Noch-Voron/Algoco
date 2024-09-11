@@ -16,7 +16,7 @@ void partly_shuffle(std::vector<int>& vec, int n, double shuffle_ratio) {
 
 int main() {
     int n = 1000; // number of elements
-    double shuffle_ratio = 0.4; // from 0.0 to 1.0
+    double shuffle_ratio = 0.75; // from 0.0 to 1.0
 
     
 
