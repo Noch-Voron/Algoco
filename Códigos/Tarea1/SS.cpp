@@ -1,29 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void selectionSort(std::vector<int>& vec)
-{
-    int n = vec.size(); // Get the size of the vector
-
-    for (int i = 0; i < n - 1; i++)
-    {
-        int min_idx = i;
-        for (int j = i + 1; j < n; j++)
-        {
-            if (vec[j] < vec[min_idx])
-                min_idx = j;
+// Implementación de Selection Sort (sacada de geeksforgeeks y adaptada para vectores)
+void selectionSort(std::vector<int>& arr) {
+    int n = arr.size();
+    //doble for anidado, complejidad O(n^2)
+    for (int i = 0; i < n - 1; i++) {//se recorre todo el vector
+        int minIdx = i;//numero actual se considera como el menor.
+        for (int j = i + 1; j < n; j++) {//por cada numero, se revisa el resto del vector hacia la derecha
+            if (arr[j] < arr[minIdx])//si el numero actual es menor que el menor actual 
+                minIdx = j;//se sobre-escribe el indice del numero menor.
         }
-
-        if (min_idx != i)
-            std::swap(vec[min_idx], vec[i]); // Use std::swap for swapping
+        std::swap(arr[minIdx], arr[i]);//se intercambia el numero menor con el de la posicion i (del primer for)
     }
-}
-
-void printArray(vector<int> vec, int n)
-{
-    for(int i = 0; i < n; i++)
-        cout << vec[i] << " ";
-    cout << endl;
 }
 
 int main() {
@@ -31,9 +20,9 @@ int main() {
     std::string line;
     std::ifstream inFile("org++.txt");
 
+    //lee el archivo y guarda numeros en vector numbers
     if (inFile.is_open()) {
         while (std::getline(inFile, line)) {
-            // Convert the line to an integer and add it to the vector
             numbers.push_back(std::stoi(line));
         }
         inFile.close();
@@ -43,7 +32,7 @@ int main() {
 
     auto start = std::chrono::high_resolution_clock::now();
 
-    selectionSort(numbers);
+    selectionSort(numbers);//ejecucion algoritmo
 
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end - start;
