@@ -1,51 +1,47 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// Merges two subarrays of arr[].
-// First subarray is arr[left..mid]
-// Second subarray is arr[mid+1..right]
-void merge(vector<int>& arr, int left, 
-                     int mid, int right)
-{
-    int n1 = mid - left + 1;
-    int n2 = right - mid;
+// Función para combinar dos subarreglos de arr[]
+// El subarreglo izquierdo es arr[left..mid]
+// El subarreglo derecho es arr[mid+1..right]
+void merge(std::vector<int>& arr, int left, int mid, int right) {
+    int n1 = mid - left + 1; // tamaño del subarreglo izquierdo
+    int n2 = right - mid;    // tamaño del subarreglo derecho
 
-    // Create temp vectors
-    vector<int> L(n1), R(n2);
+    // Se crean arreglos temporales para los subarreglos izquierdo y derecho
+    std::vector<int> L(n1), R(n2);
 
-    // Copy data to temp vectors L[] and R[]
+    // Copiar los datos al subarreglo izquierdo L[]
     for (int i = 0; i < n1; i++)
         L[i] = arr[left + i];
+
+    // Copiar los datos al subarreglo derecho R[]
     for (int j = 0; j < n2; j++)
         R[j] = arr[mid + 1 + j];
 
-    int i = 0, j = 0;
-    int k = left;
+    int i = 0, j = 0; // índices iniciales para los subarreglos izquierdo y derecho
+    int k = left;     // índice inicial del subarreglo combinado
 
-    // Merge the temp vectors back 
-    // into arr[left..right]
+    // Combinar los subarreglos en orden
     while (i < n1 && j < n2) {
-        if (L[i] <= R[j]) {
-            arr[k] = L[i];
-            i++;
+        if (L[i] <= R[j]) {  // si el elemento en L es menor o igual que el de R
+            arr[k] = L[i];   // se coloca L[i] en la posición k del arreglo original
+            i++;             // se incrementa el índice del subarreglo izquierdo
+        } else {
+            arr[k] = R[j];   // si el elemento en R es menor, se coloca en el arreglo original
+            j++;             // se incrementa el índice del subarreglo derecho
         }
-        else {
-            arr[k] = R[j];
-            j++;
-        }
-        k++;
+        k++; // se avanza al siguiente elemento del arreglo combinado
     }
 
-    // Copy the remaining elements of L[], 
-    // if there are any
+    // Copiar los elementos restantes del subarreglo izquierdo, si quedan
     while (i < n1) {
         arr[k] = L[i];
         i++;
         k++;
     }
 
-    // Copy the remaining elements of R[], 
-    // if there are any
+    // Copiar los elementos restantes del subarreglo derecho, si quedan
     while (j < n2) {
         arr[k] = R[j];
         j++;
@@ -53,25 +49,16 @@ void merge(vector<int>& arr, int left,
     }
 }
 
-// begin is for left index and end is right index
-// of the sub-array of arr to be sorted
-void mergeSort(vector<int>& arr, int left, int right)
-{
-    if (left >= right)
+// Función recursiva de MergeSort
+// Divide el arreglo en dos subarreglos, los ordena y luego los combina
+void mergeSort(std::vector<int>& arr, int left, int right) {
+    if (left >= right) // caso base: si el subarreglo tiene un solo elemento, está ordenado
         return;
 
-    int mid = left + (right - left) / 2;
-    mergeSort(arr, left, mid);
-    mergeSort(arr, mid + 1, right);
-    merge(arr, left, mid, right);
-}
-
-// Function to print a vector
-void printVector(vector<int>& arr)
-{
-    for (int i = 0; i < arr.size(); i++)
-        cout << arr[i] << " ";
-    cout << endl;
+    int mid = left + (right - left) / 2; // calcular el punto medio del subarreglo
+    mergeSort(arr, left, mid);           // ordenar la primera mitad
+    mergeSort(arr, mid + 1, right);      // ordenar la segunda mitad
+    merge(arr, left, mid, right);        // combinar las dos mitades ordenadas
 }
 
 // Driver code
@@ -79,11 +66,11 @@ int main()
 {
     std::vector<int> numbers;
     std::string line;
-    std::ifstream inFile("sh.txt");
+    std::ifstream inFile("sh.txt");//modificable
 
+    //lee el archivo
     if (inFile.is_open()) {
         while (std::getline(inFile, line)) {
-            // Convert the line to an integer and add it to the vector
             numbers.push_back(std::stoi(line));
         }
         inFile.close();
