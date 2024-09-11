@@ -5,14 +5,14 @@
 using namespace std;
 
 
-// Function to generate a random matrix with specific rows and columns
+// Funcion para generar matrices aleatorias dentro de un rango.
 vector<vector<long long>> generateRandomMatrix(int rows, int cols, int minValue, int maxValue) {
     vector<vector<long long>> matrix(rows, vector<long long>(cols));
     
-    // Seed for random number generation
+    // Semilla 
     srand(static_cast<unsigned>(time(0)));
     
-    // Fill the matrix with random values
+    // Se llena la matriz con elementos aleatorios dentro del rango dado.
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
             matrix[i][j] = minValue + rand() % (maxValue - minValue + 1);
@@ -25,9 +25,9 @@ vector<vector<long long>> generateRandomMatrix(int rows, int cols, int minValue,
 vector<vector<int>> trasponerMatriz(const vector<vector<int>>& matriz) {
     int n = matriz.size();
     vector<vector<int>> transpuesta(n, vector<int>(n));
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            transpuesta[j][i] = matriz[i][j];
+    for (int i = 0; i < n; i++) {//itera por todas las filas
+        for (int j = 0; j < n; j++) {//itera por todos los elementos de cada fila
+            transpuesta[j][i] = matriz[i][j];//se traspone
         }
     }
     return transpuesta;
@@ -38,10 +38,10 @@ vector<vector<long long>> multiplicarMatricesOpt(const vector<vector<long long>>
     int n = A.size(); // Asumiendo que A y B son matrices cuadradas de tamaño n x n
     vector<vector<long long>> C(n, vector<long long>(n, 0)); // Matriz de resultados inicializada en 0
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {//es muy similar al clásico
         for (int j = 0; j < n; j++) {
             int suma = 0;
-            for (int k = 0; k < n; k++) {
+            for (int k = 0; k < n; k++) {  // se cambian de B[k][j] a B[j][k]
                 suma += A[i][k] * B[j][k]; // Nota: ahora B[j][k] accede a una fila de B traspuesta
             }
             C[i][j] = suma;
@@ -52,11 +52,11 @@ vector<vector<long long>> multiplicarMatricesOpt(const vector<vector<long long>>
 }
 
 int main() {
-    // Sizes for testing
-    vector<int> sizes = {128, 256, 512, 1024, 2048, 4096}; // Adjust these sizes as needed
+    // Tamaños por testear
+    vector<int> sizes = {128, 256, 512, 1024, 2048, 4096};
 
     for (int n : sizes) {
-        // Example of rectangular matrices
+        //generación de matrices por multiplicar
         vector<vector<long long>> A = generateRandomMatrix(n, n, 0, 100);
         vector<vector<long long>> B = generateRandomMatrix(n, n, 0, 100);
 
