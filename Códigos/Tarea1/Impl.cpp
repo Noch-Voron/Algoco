@@ -11,11 +11,11 @@ void printArray(vector<int> vec, int n)
 int main() {
     std::vector<int> numbers;
     std::string line;
-    std::ifstream inFile("or.txt");
+    std::ifstream inFile("or.txt");//lectura archivo de texto.
 
     if (inFile.is_open()) {
         while (std::getline(inFile, line)) {
-            // Convert the line to an integer and add it to the vector
+            // Se añaden los numeros de todo el archivo al vector numbers.
             numbers.push_back(std::stoi(line));
         }
         inFile.close();
@@ -25,7 +25,7 @@ int main() {
 
     auto start = std::chrono::high_resolution_clock::now();
 
-    sort(numbers.begin(), numbers.end());
+    sort(numbers.begin(), numbers.end());//se usa std::sort
 
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> elapsed = end - start;
