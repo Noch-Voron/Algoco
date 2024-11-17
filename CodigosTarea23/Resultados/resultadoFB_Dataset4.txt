@@ -1,7 +1,6 @@
-
-
-
-
+Para la cadena base S1: qwbcz y la cadena objetivo S2: pmovj. El Tiempo de ejecución es: 1 ms. Costo: 35
+Para la cadena base S1: ergvch y la cadena objetivo S2: ucvtyu. El Tiempo de ejecución es: 2 ms. Costo: 35
+Para la cadena base S1: fadsdfj y la cadena objetivo S2: ygjfghx. El Tiempo de ejecución es: 17 ms. Costo: 44
 Para la cadena base S1: uriodzim y la cadena objetivo S2: vnetqppd. El Tiempo de ejecución es: 110 ms
 Para la cadena base S1: lktkuykmg y la cadena objetivo S2: sumwnuptz. El Tiempo de ejecución es: 471 ms
 Para la cadena base S1: fjndwlqdoh y la cadena objetivo S2: ypnynlqpda. El Tiempo de ejecución es: 875 ms
