@@ -162,8 +162,10 @@ void printTable(const vector<vector<int>> &cache){
         r++;
     }
 }
-//                 tomados como referencia para ahorrar memoria
+
+
 //https://stackoverflow.com/questions/73021792/the-damerau-levenshtein-distance-in-c
+//                 tomados como referencia para ahorrar memoria
 int dist_damlev(string& S1, string& S2){
     int n = S1.size();
     int m = S2.size();
@@ -195,33 +197,53 @@ int dist_damlev(string& S1, string& S2){
             }
         }
     }
-    //printTable(dp);
-    //cout << "El largo de " << S1 << " es: " << S1.size() << " y el largo de " << S2 << " es: " << S2.size() << endl;
-    //cout << "se revisa dp[" << S1.size() << "][" << S2.size() << "].\n";
-    imprimir_operaciones(S1, S2, dp);
+    //printTable(dp); //para ver la tabla generada
+    imprimir_operaciones(S1, S2, dp); //si se quieren ver las operaciones quitar comentario
     return dp[n][m];
     
 }
 
-int main(){
+
+
+int main() {
     generateDeleteMap();
     generateInsertMap();
     generateTransposeMap();
     generateReplaceMap();
-    while (true){
-        string S1, S2;
-        int flag;
-        cout << "String a transformar: ";
-        cin >> S1;
-        cout << "String objetivo: ";
-        cin >> S2;
-        cout << "Vamos a encontrar la distancia minima entre las cadenas " << S1 << " y " << S2 << endl;
-        int dist = dist_damlev(S1,S2);
-        cout << "¿Quieres seguir testeando? (1: si, 0: no): ";
-        cin >> flag;
-        if (flag != 1){
+
+    string S1;
+    string S2;
+
+    vector<pair<string,string>> pairs;
+    string flag;
+    while (true) {
+        string s1, s2;
+        cout << "S1 (Enter para string vacio): ";
+        getline(cin, s1);
+        cout << "S2 (Enter para string vacio): ";
+        getline(cin, s2);
+        pairs.push_back({s1,s2});
+        cout << "Insertar mas casos? (1: si, 0: no): ";
+        getline(cin,flag);
+        if(flag != "1"){
             break;
         }
     }
+
+    ofstream write("resultado.txt");
+    for (const auto& pair : pairs) {
+        S1 = pair.first;
+        S2 = pair.second;
+        auto start = chrono::high_resolution_clock::now();
+        int resultado = dist_damlev(S1, S2);
+        auto elapsed = chrono::high_resolution_clock::now() - start;
+
+        long long time = chrono::duration_cast<chrono::milliseconds>(
+        elapsed).count();
+
+        write << "Para la cadena base S1: " << S1 << " y la cadena objetivo S2: " << S2 <<". El Tiempo de ejecución es: " << time << " ms. Costo: " << resultado << endl;
+    }
+    write.close();
+    return 0;
 }
 
