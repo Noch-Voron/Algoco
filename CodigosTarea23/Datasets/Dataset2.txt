@@ -1,0 +1,10 @@
+Caso 1: S1: , S2: generar
+Caso 2: S1: muchos, S2: 
+Caso 3: S1: planeta, S2: planeta
+Caso 4: S1: muuuuccchhoos, S2: muchos
+Caso 5: S1: strings, S2: sssstringssss
+Caso 6: S1: abababab, S2: babababa
+Caso 7: S1: llloclqsoett, S2: closet
+Caso 8: S1: keyboard, S2: yodarbyek
+Caso 9: S1: sleepy, S2: ppeppyslee
+Caso 10: S1: resultado, S2: esusltdadr  

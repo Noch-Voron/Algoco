@@ -1,0 +1,10 @@
+Caso 1: S1: planeta, S2: lpnatea
+Caso 2: S1: agtiots, S2: gatitos
+Caso 3: S1: botella, S2: obtleal
+Caso 4: S1: rattatouile, S2: artatotiule
+Caso 5: S1: misoibnte, S2: simbionte
+Caso 6: S1: insert, S2: rtsein
+Caso 7: S1: letdele, S2: delete
+Caso 8: S1: kugonso, S2: songoku
+Caso 9: S1: ganondorf, S2: doganrfon
+Caso 10: S1: lhneapos, S2: alphonse

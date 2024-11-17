@@ -1,0 +1,10 @@
+Caso 1: S1: apple, S2: lapep
+Caso 2: S1: nasbe, S2: beans
+Caso 3: S1: fluff, S2: luffy
+Caso 4: S1: kratos, S2: platos
+Caso 5: S1: zagreus, S2: melinoe
+Caso 6: S1: kitten, S2: sitting
+Caso 7: S1: dragon, S2: gnodar
+Caso 8: S1: light, S2: night
+Caso 9: S1: algorithm, S2: logarithm
+Caso 10: S1: mewalte, S2: wallet

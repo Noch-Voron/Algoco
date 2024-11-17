@@ -1,0 +1,5 @@
+Caso 1: S1: lyjphjzrzklzxodeuihk, S2: 
+Caso 2: S1: , S2: fjgahdfghayidfyuyga
+Caso 3: S1: fgafad, S2: uagfdgjahkfdgjk
+Caso 4: S1: adfjhgjadfgkjadf, S2: fadsf
+Caso 5: S1: fhagjkafdkgafd, S2: ydyabufdgyuyiu
