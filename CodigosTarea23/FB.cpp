@@ -140,7 +140,7 @@ int main() {
             break;
         }
     }
-
+    // UNA VEZ SE HAYA CREADO ESTE ARCHIVO CAMBIAR EL NOMBRE ANTES DE HACER OTRAS PRUEBAS O LOS RESULTADOS SE PERDERÁN
     ofstream write("resultado.txt");
     for (const auto& pair : pairs) {
         S1 = pair.first;
