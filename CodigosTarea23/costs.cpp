@@ -92,16 +92,12 @@ int main(){
     }
     if (choice == 1){
         cout << "Los archivos se armaran con costos constantes\n";
-        crearmatrix(choice,"cost_replace.txt");
-        crearmatrix(choice,"cost_transpose.txt");
-        crearRow(choice,"cost_insert.txt");
-        crearRow(choice,"cost_delete.txt");
     }
     if (choice == 2){
         cout << "Los archivos se armaran con costos aleatorios\n";
-        crearmatrix(choice,"cost_replace.txt");
+    }
+    crearmatrix(choice,"cost_replace.txt");
         crearmatrix(choice,"cost_transpose.txt");
         crearRow(choice,"cost_insert.txt");
         crearRow(choice,"cost_delete.txt");
-    }
 }
