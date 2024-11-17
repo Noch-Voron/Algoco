@@ -1,0 +1,5 @@
+Para la cadena base S1: uriodzim y la cadena objetivo S2: vnetqppd. El Tiempo de ejecución es: 0 ms. Costo: 55
+Para la cadena base S1: lktkuykmg y la cadena objetivo S2: sumwnuptz. El Tiempo de ejecución es: 0 ms. Costo: 58
+Para la cadena base S1: fjndwlqdoh y la cadena objetivo S2: ypnynlqpda. El Tiempo de ejecución es: 0 ms. Costo: 44
+Para la cadena base S1: crlkeskdqby y la cadena objetivo S2: amuvnwrdhcy. El Tiempo de ejecución es: 0 ms. Costo: 63
+Para la cadena base S1: zcfvfzqzbvkj y la cadena objetivo S2: mrbntjfscryx. El Tiempo de ejecución es: 0 ms. Costo: 81

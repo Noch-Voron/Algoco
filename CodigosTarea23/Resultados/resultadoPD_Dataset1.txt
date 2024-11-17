@@ -1,0 +1,10 @@
+Para la cadena base S1: apple y la cadena objetivo S2: lapep. El Tiempo de ejecución es: 0 ms. Costo: 18
+Para la cadena base S1: nasbe y la cadena objetivo S2: beans. El Tiempo de ejecución es: 0 ms. Costo: 21
+Para la cadena base S1: fluff y la cadena objetivo S2: luffy. El Tiempo de ejecución es: 0 ms. Costo: 9
+Para la cadena base S1: kratos y la cadena objetivo S2: platos. El Tiempo de ejecución es: 0 ms. Costo: 14
+Para la cadena base S1: zagreus y la cadena objetivo S2: melinoe. El Tiempo de ejecución es: 0 ms. Costo: 46
+Para la cadena base S1: kitten y la cadena objetivo S2: sitting. El Tiempo de ejecución es: 2 ms. Costo: 18
+Para la cadena base S1: dragon y la cadena objetivo S2: gnodar. El Tiempo de ejecución es: 4 ms. Costo: 30
+Para la cadena base S1: light y la cadena objetivo S2: night. El Tiempo de ejecución es: 0 ms. Costo: 7
+Para la cadena base S1: algorithm y la cadena objetivo S2: logarithm. El Tiempo de ejecución es: 3 ms. Costo: 12
+Para la cadena base S1: mewalte y la cadena objetivo S2: wallet. El Tiempo de ejecución es: 3 ms. Costo: 17

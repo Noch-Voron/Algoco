@@ -1,0 +1,10 @@
+Para la cadena base S1:  y la cadena objetivo S2: generar. El Tiempo de ejecución es: 0 ms. Costo: 28
+Para la cadena base S1: muchos y la cadena objetivo S2: . El Tiempo de ejecución es: 0 ms. Costo: 30
+Para la cadena base S1: planeta y la cadena objetivo S2: planeta. El Tiempo de ejecución es: 0 ms. Costo: 0
+Para la cadena base S1: muuuuccchhoos y la cadena objetivo S2: muchos. El Tiempo de ejecución es: 2 ms. Costo: 35
+Para la cadena base S1: strings y la cadena objetivo S2: sssstringssss. El Tiempo de ejecución es: 21 ms. Costo: 24
+Para la cadena base S1: abababab y la cadena objetivo S2: babababa. El Tiempo de ejecución es: 0 ms. Costo: 9
+Para la cadena base S1: llloclqsoett y la cadena objetivo S2: closet. El Tiempo de ejecución es: 11 ms. Costo: 33
+Para la cadena base S1: keyboard y la cadena objetivo S2: yodarbyek. El Tiempo de ejecución es: 128 ms. Costo: 38
+Para la cadena base S1: sleepy y la cadena objetivo S2: ppeppyslee. El Tiempo de ejecución es: 29 ms. Costo: 34
+Para la cadena base S1: resultado y la cadena objetivo S2: esusltdadr. El Tiempo de ejecución es: 124 ms. Costo: 20

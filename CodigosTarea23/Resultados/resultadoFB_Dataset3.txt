@@ -1,0 +1,10 @@
+Para la cadena base S1: planeta y la cadena objetivo S2: lpnatea. El Tiempo de ejecución es: 0 ms. Costo: 9
+Para la cadena base S1: agtiots y la cadena objetivo S2: gatitos. El Tiempo de ejecución es: 1 ms. Costo: 6
+Para la cadena base S1: botella y la cadena objetivo S2: obtleal. El Tiempo de ejecución es: 0 ms. Costo: 9
+Para la cadena base S1: rattatouile y la cadena objetivo S2: aratottiule. El Tiempo de ejecución es: 126 ms. Costo: 21
+Para la cadena base S1: misoibnte y la cadena objetivo S2: simbionte. El Tiempo de ejecución es: 25 ms. Costo: 22
+Para la cadena base S1: insert y la cadena objetivo S2: rtsein. El Tiempo de ejecución es: 1 ms. Costo: 28
+Para la cadena base S1: letdele y la cadena objetivo S2: delete. El Tiempo de ejecución es: 0 ms. Costo: 23
+Para la cadena base S1: kugonso y la cadena objetivo S2: songoku. El Tiempo de ejecución es: 5 ms. Costo: 32
+Para la cadena base S1: ganondorf y la cadena objetivo S2: doganrfon. El Tiempo de ejecución es: 91 ms. Costo: 36
+Para la cadena base S1: lhneapos y la cadena objetivo S2: alphonse. El Tiempo de ejecución es: 36 ms. Costo: 36

@@ -1,0 +1,5 @@
+Para la cadena base S1: lyjphjzrzklzxodeuihk y la cadena objetivo S2: . El Tiempo de ejecución es: 0 ms. Costo: 100
+Para la cadena base S1:  y la cadena objetivo S2: fjgahdfghayidfyuyga. El Tiempo de ejecución es: 0 ms. Costo: 76
+Para la cadena base S1: fgafad y la cadena objetivo S2: uagfdgjahkfdgjk. El Tiempo de ejecución es: 35 ms. Costo: 45
+Para la cadena base S1: adfjhgjadfgkjadf y la cadena objetivo S2: adfjhgjadfgkjadf. El Tiempo de ejecución es: 0 ms. Costo: 0
+Para la cadena base S1: fhagjkafdkgafd y la cadena objetivo S2: ydyabufdgyuyiu. El Tiempo de ejecución es: 1,262,790 ms. Costo: 76
