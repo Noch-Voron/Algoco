@@ -195,10 +195,12 @@ int dist_damlev(string& S1, string& S2){
             if (i > 1 && j > 1 && S1[i - 1] == S2[j - 2] && S1[i - 2] == S2[j - 1]) {
                 dp[i][j] = min(dp[i][j], dp[i - 2][j - 2] + costo_transpose(S1[i - 2], S1[i - 1])); // Costo para transposición
             }
+            //cout << "Costo encontrado minimo para " << S1[i - 1] << " y " << S2[j - 1] << " es: " << dp[i][j] << endl;
+            //este print no fue probado
         }
     }
-    //printTable(dp); //para ver la tabla generada
-    imprimir_operaciones(S1, S2, dp); //si se quieren ver las operaciones quitar comentario
+    //printTable(dp); quitar // si se quiere ver la tabla
+    //imprimir_operaciones(S1, S2, dp); //si se quieren ver las operaciones quitar comentario
     return dp[n][m];
     
 }
@@ -229,7 +231,7 @@ int main() {
             break;
         }
     }
-
+    // UNA VEZ SE HAYA CREADO ESTE ARCHIVO CAMBIAR EL NOMBRE ANTES DE HACER OTRAS PRUEBAS O LOS RESULTADOS SE PERDERÁN
     ofstream write("resultado.txt");
     for (const auto& pair : pairs) {
         S1 = pair.first;
