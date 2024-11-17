@@ -1,23 +1,38 @@
-En esta sección del repositorio se almacenan todos los códigos fuente y archivos de texto utilizados para la formulación del informe para la tarea 2 y 3.
+# Algoritmos de Fuerza Bruta y Programación Dinámica
 
-Los archivos FB.cpp y PD.cpp son los escenciales para probar los algoritmos, tienen la implementación de fuerza bruta y programación dinámica respectivamente
-Las instrucciones de uso de ambos son simples
-Asumiendo que se tenga instalado algún IDE que soporte C++, y los compiladores necesarios no habrá mucho problema.
-Para ambos archivos hay que tener en el mismo directorio a los archivos de texto cost_delete.txt, cost_insert.txt, cost_replace.txt y cost_transpose.txt. 
-  Estos son editables para probar diferentes combinaciones de costos.
-  Adicionalmente se adjunta un archivo llamado costs.cpp, este es para crear los archivos mencionados anteriormente con costos constantes o costos aleatorios (dando un rango de costos)
-    Para el informe se usó solo una combinación priorizando un bajo costo de transposicion, luego un costo más alto para las otras operaciones.
-Si se tienen los 4 archivos de texto en el mismo directorio se podrán realizar las pruebas
-Primero se deben compilar ambos archivos usando el comando de preferencia. Por simplicidad en este informe se utilizó el clásico g++ PD.cpp -o PD. 
-Una vez comienze la ejecución de cualquiera de los programas se pedirán dos cadenas, la primera es S1, la cadena base. 
-Luego se pedirá S2, la cadena objetivo.
-  Se aceptan cadenas vacías. No se aceptan cadenas que contengan numeros, letras mayúsculas o la letra ñ. 
-Estas se almacenan en un vector de pares
-Seguido a esto se pregunta si se quiere seguir agregando casos de prueba, para continuar se debe ingresar un 1.
-Si se quiere obtener los resultados en esta fase se debe ingresar cualquier cosa diferente a 1.
-A continuación se comienza a ejecutar el algoritmo, dependiendo de si se revisa fuerza bruta o programación dinámica los tiempos de ejecución podrían varíar.
-Cuidado con cadenas de largo 12 o más, se tendrá una espera larga si se usa fuerza bruta.
+Este repositorio contiene los códigos fuente y archivos de texto utilizados para la formulación de los informes de las tareas 2 y 3.
 
-Una vez se termina el algoritmo, la ejecución termina y se generará un archivo llamado resultados.txt, este contiene los resultados de los pares de cadenas ingresados
-  Mostrando el par de cadenas S1 y S2, el tiempo que estuvo en ejecución el algoritmo para ese par y el resultado final.
-Si se quiere tener múltiples de estos archivos se deberá cambiar el nombre después de cada ejecución, de lo contrario el archivo original se perderá.
+## Archivos principales
+
+- **FB.cpp**: Implementación del algoritmo de **Fuerza Bruta**.
+- **PD.cpp**: Implementación del algoritmo de **Programación Dinámica**.
+
+Ambos archivos son esenciales para probar los algoritmos y tienen instrucciones de uso simples.
+
+## Requisitos
+
+- Tener un IDE que soporte C++ y los compiladores necesarios instalados.
+- Los siguientes archivos de texto deben estar en el mismo directorio que los archivos `.cpp`:
+  - `cost_delete.txt`
+  - `cost_insert.txt`
+  - `cost_replace.txt`
+  - `cost_transpose.txt`
+
+Estos archivos de texto son editables y se utilizan para probar diferentes combinaciones de costos en las operaciones.
+
+### Archivo adicional
+
+- **costs.cpp**: Este archivo genera los archivos de texto anteriores con costos constantes o aleatorios dentro de un rango especificado.
+
+## Configuración de costos
+
+Para el informe, se utilizó una combinación de costos priorizando un bajo costo para la transposición, y luego un costo más alto para las otras operaciones. Si se tienen los cuatro archivos de texto en el mismo directorio, se podrán realizar las pruebas sin problemas.
+
+## Instrucciones de uso
+
+1. **Compilación**: Primero, compile ambos archivos usando el compilador C++ de su preferencia. Por simplicidad, se utilizó el siguiente comando en el informe:
+   g++ PD.cpp -o PD
+2. **Ejecución**: Al ejecutar cualquiera de los programas, se te pedirá ingresar dos cadenas:
+-S1: La cadena base.
+-S2: La cadena objetivo.
+
