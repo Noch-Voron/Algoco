@@ -23,6 +23,8 @@ Estos archivos de texto son editables y se utilizan para probar diferentes combi
 ### Archivo adicional
 
 - **costs.cpp**: Este archivo genera los archivos de texto anteriores con costos constantes o aleatorios dentro de un rango especificado.
+- **strings.cpp**: Este programa genera archivos de texto con casos de prueba, el formato es un caso de prueba por linea con S1 y S2 especificados.
+                La cantidad de casos de prueba y el tamaño de las cadenas es decidido por el usuario.
 
 ## Configuración de costos
 
